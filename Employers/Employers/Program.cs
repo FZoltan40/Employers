@@ -7,10 +7,18 @@ namespace Employers
     internal class Program
     {
         public static List<Employer> employers = new List<Employer>();
+
+        public static void kiir()
+        {
+            Console.WriteLine("Az összes dolgozó neve:");
+            foreach (var item in employers)
+            {
+                Console.WriteLine($"{item.Name}");
+            }
+        }
         static void Main(string[] args)
         {
             StreamReader sr = new StreamReader("tulajdonsagok_100sor.txt");
-
 
             for (int i = 0; i < 100; i++)
             {
@@ -18,7 +26,7 @@ namespace Employers
                 employers.Add(emp);
             }
 
-            Console.WriteLine(employers[99].Name);
+            kiir();
         }
     }
 }

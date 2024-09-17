@@ -33,6 +33,17 @@ namespace Employers
 
             Console.WriteLine($"Azonosító: {id}, Fizetés: {max}");
         }
+
+        public static void nyudijig()
+        {
+            foreach (var item in employers)
+            {
+                if (item.Age == 55)
+                {
+                    Console.WriteLine($"Dolgozo neve: {item.Name}, Dolgozó életkora: {item.Age}");
+                }
+            }
+        }
         static void Main(string[] args)
         {
             StreamReader sr = new StreamReader("tulajdonsagok_100sor.txt");
@@ -45,6 +56,7 @@ namespace Employers
 
             kiir();
             legjobbFizetes();
+            nyudijig();
         }
     }
 }

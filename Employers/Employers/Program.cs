@@ -16,6 +16,23 @@ namespace Employers
                 Console.WriteLine($"{item.Name}");
             }
         }
+
+        public static void legjobbFizetes()
+        {
+            int max = employers[0].Sallery;
+            int id = 0;
+
+            foreach (var item in employers)
+            {
+                if (item.Sallery > max)
+                {
+                    max = item.Sallery;
+                    id = item.Id;
+                }
+            }
+
+            Console.WriteLine($"Azonosító: {id}, Fizetés: {max}");
+        }
         static void Main(string[] args)
         {
             StreamReader sr = new StreamReader("tulajdonsagok_100sor.txt");
@@ -27,6 +44,7 @@ namespace Employers
             }
 
             kiir();
+            legjobbFizetes();
         }
     }
 }

@@ -44,6 +44,21 @@ namespace Employers
                 }
             }
         }
+
+        public static int keresetFelett()
+        {
+            int kereset = 0;
+
+            foreach (var item in employers)
+            {
+                if (item.Sallery >= 50000)
+                {
+                    kereset++;
+                }
+            }
+
+            return kereset;
+        }
         static void Main(string[] args)
         {
             StreamReader sr = new StreamReader("tulajdonsagok_100sor.txt");
@@ -57,6 +72,7 @@ namespace Employers
             kiir();
             legjobbFizetes();
             nyudijig();
+            Console.WriteLine($"50000 vagy a felet keresők száma {keresetFelett()}");
         }
     }
 }

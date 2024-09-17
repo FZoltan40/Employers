@@ -1,6 +1,4 @@
-﻿using System.IO;
-
-namespace Employers
+﻿namespace Employers
 {
     public class Employer
     {
@@ -8,11 +6,10 @@ namespace Employers
         public string Name { get; set; }
         public int Age { get; set; }
         public int Sallery { get; set; }
-
-        public Employer(string file)
+        public Employer(string row)
         {
-            StreamReader sr = new StreamReader(file);
-            string[] darabol = sr.ReadLine().Split(';');
+
+            string[] darabol = row.Split(';');
 
             Id = int.Parse(darabol[0]);
             Name = darabol[1];

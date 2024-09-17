@@ -1,0 +1,7 @@
+C:\Users\farka\Git\Employers\Employers\Employers\bin\Debug\Employers.exe.config
+C:\Users\farka\Git\Employers\Employers\Employers\bin\Debug\Employers.exe
+C:\Users\farka\Git\Employers\Employers\Employers\bin\Debug\Employers.pdb
+C:\Users\farka\Git\Employers\Employers\Employers\obj\Debug\Employers.csproj.AssemblyReference.cache
+C:\Users\farka\Git\Employers\Employers\Employers\obj\Debug\Employers.csproj.CoreCompileInputs.cache
+C:\Users\farka\Git\Employers\Employers\Employers\obj\Debug\Employers.exe
+C:\Users\farka\Git\Employers\Employers\Employers\obj\Debug\Employers.pdb
